@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION mqttextender-example-chat-client-javascript -->
 
-The **MQTT Basic Chat Demo** is a very simple chat applcation based on MQTT
+The **MQTT Basic Chat Demo** is a very simple chat application based on MQTT
 Extender.
 
 ![screenshot](screen-large.png)
