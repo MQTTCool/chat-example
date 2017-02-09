@@ -10,7 +10,7 @@ Extender.
 ## Details
 
 The **MQTT Basic Chat Demo** implements an extremely simple chat application,
-which shows a basic usage of the **MQTT Extender Web Client API** to handle
+which shows a basic usage of the *MQTT Extender Web Client API* to handle
 communications with MQTT Extender. All the users connected to the page can 
 exchange messages, therefore  launch multiple instances of the demo, possibly on
 different machines, to appreciate the message broadcast capability.
