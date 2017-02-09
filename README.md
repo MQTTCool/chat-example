@@ -85,7 +85,7 @@ deployed the project.
 
 ### Related Projects
 
-* [MQTT Extender - Hello IoT World Demo - HTML Client](https://github.com/Lightstreamer/Lightstreamer-MQTT-example-HelloIoTWorld-client-javascript)
+* [MQTT Extender - Hello IoT World Demo - HTML Client](https://github.com/Lightstreamer/MQTTExtender-example-HelloIoTWorld-client-javascript)
 * [Lightstreamer - Basic Chat Demo - HTML Client](https://github.com/Lightstreamer/Lightstreamer-example-chat-client-javascript)
 
 ## MQTT Extender Compatibility Notes
