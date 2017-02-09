@@ -1,25 +1,26 @@
 # MQTT Extender - Basic Chat Demo - HTML Client
 
-<!-- START DESCRIPTION lightstreamer-mqtt-example-chat-client-javascript -->
+<!-- START DESCRIPTION mqttextender-example-chat-client-javascript -->
 
-This project includes a simple MQTT-based chat.
+The **MQTT Basuc Chat Demo** is a very simple chat applcation based on MQTT
+Extender.
+
+![screenshot](screen-large.png)
 
 ## Details
 
 The **MQTT Basic Chat Demo** implements an extremely simple chat application,
 where all the users connected to the page can exchange messages.
 
-Launch multiple instances of the demo, possibly on different machines,
-to appreciate the message broadcast capability.
+Launch multiple instances of the demo, possibly on different machines, to
+appreciate the message broadcast capability.
 
 This page uses the **MQTT Extender Web Client API** to handle communications
 with MQTT Extender.
 
 Check out the sources for further explanations.
 
-![screenshot](screen-large.png)
-
-<!-- END DESCRIPTION lightstreamer-mqtt-example-chat-client-javascript -->
+<!-- END DESCRIPTION mqttextender-example-chat-client-javascript -->
 
 ## Install
 
