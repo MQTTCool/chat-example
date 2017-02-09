@@ -2,21 +2,19 @@
 
 <!-- START DESCRIPTION mqttextender-example-chat-client-javascript -->
 
-The **MQTT Basic Chat Demo** is a very simple chat application based on MQTT
-Extender.
+The **MQTT Basic Chat Demo** is a very simple chat application, which shows a
+basic usage of the **MQTT Extender Web Client API** to handle communications
+with MQTT Extender.
 
 ![screenshot](screen-large.png)
 
 ## Details
 
 The **MQTT Basic Chat Demo** implements an extremely simple chat application,
-where all the users connected to the page can exchange messages.
-
-Launch multiple instances of the demo, possibly on different machines, to
-appreciate the message broadcast capability.
-
-This page uses the **MQTT Extender Web Client API** to handle communications
-with MQTT Extender.
+which shows a basic usage of the **MQTT Extender Web Client API** to handle
+communications with MQTT Extender. All the users connected to the page can 
+exchange messages, therefore  launch multiple instances of the demo, possibly on
+different machines, to appreciate the message broadcast capability.
 
 Check out the sources for further explanations.
 
