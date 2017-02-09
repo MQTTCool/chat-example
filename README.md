@@ -66,9 +66,9 @@ MQTTExtender.connect('http://localhost:8080', {
 and change it accordingly.
 
 Further, the demo will look for the **mosquitto** alias, which is predefined in
-the default MQTT Extender configuration. Once more, yf you need to target a
+the default MQTT Extender configuration. Once more, if you need to target a
 different MQTT broker, and provided that relative connection parameters are
-already defined as shown above, modify the following line:
+already defined as shown above, modify the following line in `index.html`:
 
 ```js 
   var mqttClient = mqttExtenderSession.createClient('mosquitto');
