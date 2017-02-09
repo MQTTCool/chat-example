@@ -73,7 +73,7 @@ the default MQTT Extender configuration. Once more, yf you need to target a
 different MQTT broker, and provided that relative connection parameters are
 already defined as shown above, modify the following line:
 
-```js
+```js 
   var mqttClient = mqttExtenderSession.createClient('mosquitto');
 ```
 and change it by replacing **mosquitto** with new alias mapping the MQTT broker
