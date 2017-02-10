@@ -45,7 +45,7 @@ to configure broker connection parameters):
   <param name="mybroker.connection_timeout">5</param>
   <param name="mybroker.keep_alive">20</param>
   ...
-  ```  
+  ```
 
 * Download this project.
 * RequireJS is currently hot-linked in the html page: you may want to replace it
