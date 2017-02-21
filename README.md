@@ -2,7 +2,7 @@
 
 <!-- START DESCRIPTION mqttextender-example-chat-client-javascript -->
 
-The **MQTT Basic Chat Demo** is a very simple chat application based on MQTT 
+The **MQTT Basic Chat Demo** is a very simple chat application based on MQTT
 Extender.
 
 ![screenshot](screen-large.png)
@@ -11,7 +11,7 @@ Extender.
 
 The **MQTT Basic Chat Demo** implements an extremely simple chat application,
 which shows a basic usage of the *MQTT Extender Web Client API* to handle
-communications with MQTT Extender. All the users connected to the page can 
+communications with MQTT Extender. All the users connected to the page can
 exchange messages, therefore  launch multiple instances of the demo, possibly on
 different machines, to appreciate the message broadcast capability.
 
@@ -24,13 +24,13 @@ Check out the sources for further explanations.
 If you want to install a version of this demo pointing to your local MQTT
 Extender, follows these steps.
 
-* As prerequiste, this demo needs a MQTT infrastructure to run. You can choose 
-whatever MQTT broker you prefer, or may also use one of the avaible public 
-broker (an update-to-date list is maintaned at 
+* As prerequiste, this demo needs a MQTT infrastructure to run. You can choose
+whatever MQTT broker you prefer, or may also use one of the avaible public
+broker (an update-to-date list is maintaned at
 [https://github.com/mqtt/mqtt.github.io/wiki/public_brokers]()).
-* Configure and launch a MQTT Extender instance. Please refer to Lightstreamer
+* Configure the MQTT Extender instance. Please refer to Lightstreamer
 web site [download page](http://download.lightstreamer.com/) to find the MQTT
-Extender download package. MQTT Extender comes with a set of predefined 
+Extender download package. MQTT Extender comes with a set of predefined
 configurations for connecting with local MQTT server instances, as well as with
 the most common publicly accessible brokers. If you want to provide a new custom
 configuration, open the `mqtt_master_connector_conf.xml` file located under
@@ -39,14 +39,14 @@ configuration, open the `mqtt_master_connector_conf.xml` file located under
 to configure broker connection parameters):
   ```xml
   ...
-  <!-- MQTT broker connection parameters for a local instance 
+  <!-- MQTT broker connection parameters for a local instance
   listening on port 1883, aliased by "mybroker". -->
   <param name="mybroker.server_address">tcp://localhost:1883</param>
   <param name="mybroker.connection_timeout">5</param>
   <param name="mybroker.keep_alive">20</param>
   ...
   ```
-
+* Launch the MQTT Extender.
 * Download this project.
 * RequireJS is currently hot-linked in the html page: you may want to replace it
 with a local version and/or to upgrade its version.
@@ -62,7 +62,7 @@ The demo assumes that MQTT Extender is launched from localhost, but if you need
 to target a different server, search in `index.html` this line:
 ```js
 MQTTExtender.connect('http://localhost:8080', {
-``` 
+```
 and change it accordingly.
 
 Further, the demo will look for the **mosquitto** alias, which is predefined in
@@ -70,7 +70,7 @@ the default MQTT Extender configuration. Once more, if you need to target a
 different MQTT broker, and provided that relative connection parameters are
 already defined as shown above, modify the following line in `index.html`:
 
-```js 
+```js
   var mqttClient = mqttExtenderSession.createClient('mosquitto');
 ```
 and change it by replacing **mosquitto** with new alias mapping the MQTT broker
