@@ -37,10 +37,10 @@ require(['MQTTExtender'], function(MQTTExtender) {
         // Message received.
         $('#messages')
           .append($('<div>')
-          .text(message.payloadString)
-          .addClass('messageContainer')) //append the message
+            .text(message.payloadString)
+            .addClass('messageContainer')) //append the message
           .scrollTop($('#messages')
-          .prop('scrollHeight')); //move the scrollbar on the bottom
+            .prop('scrollHeight')); //move the scrollbar on the bottom
       };
 
       // Called when the client loses its connection.
