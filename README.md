@@ -37,15 +37,17 @@ configuration, open the `mqtt_master_connector_conf.xml` file located under
 `<MQTTEXTENDER_HOME>/conf` and provide a set of entries similar to the following
 (please refer to the inline documentation for more in-depth information on how
 to configure broker connection parameters):
+
   ```xml
   ...
   <!-- MQTT broker connection parameters for a local instance
-  listening on port 1883, aliased by "mybroker". -->
+       listening on port 1883, aliased by "mybroker". -->
   <param name="mybroker.server_address">tcp://localhost:1883</param>
   <param name="mybroker.connection_timeout">5</param>
   <param name="mybroker.keep_alive">20</param>
   ...
   ```
+
 * Launch the MQTT Extender.
 * Download this project.
 * RequireJS is currently hot-linked in the html page: you may want to replace it
