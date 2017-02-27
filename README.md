@@ -34,9 +34,9 @@ Extender download package. MQTT Extender comes with a set of predefined
 configurations for connecting with local MQTT server instances, as well as with
 the most common publicly accessible brokers. If you want to provide a new custom
 configuration, open the `mqtt_master_connector_conf.xml` file located under
-`<MQTTEXTENDER_HOME>/conf` and provide a set of entries similar to the following
-(please refer to the inline documentation for more in-depth information on how
-to configure broker connection parameters):
+`<MQTTEXTENDER_HOME>/mqtt_connectors` and provide a set of entries similar to
+the following (please refer to the inline documentation for more in-depth
+information on how to configure broker connection parameters):
 
   ```xml
   ...
