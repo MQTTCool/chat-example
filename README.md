@@ -52,7 +52,7 @@ with a local version and/or to upgrade its version.
 with a local version and/or to upgrade its version.
 * Deploy this demo on MQTT.Cool (used as Web server) or in any external Web
 server. If you choose the former, create a folder with name such as
-`ChatDemo_MQTT` under the `MQTT.COOL_HOME>/pages`, and copy there the contents
+`ChatDemo` under the `<MQTT.COOL_HOME>/pages`, and copy there the contents
 of the `src` folder of this project.
 
 ## Configure
@@ -75,7 +75,7 @@ and change it by replacing **mosquitto** with new alias mapping the MQTT broker
 you are going to use.
 
 ## Launch
-Open your browser and point it to [http://localhost:8080/ChatDemo_MQTT](), or to
+Open your browser and point it to [http://localhost:8080/ChatDemo](), or to
 the address according to the host and/or the name of the folder where you
 deployed the project.
 
