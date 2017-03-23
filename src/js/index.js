@@ -14,15 +14,15 @@
   limitations under the License.
 */
 
-require(['MQTTExtender'], function(MQTTExtender) {
-  // Connect to the MQTT Extender hosted at 'localhost' and listening on TCP
+require(['MQTTCool'], function(MQTTCool) {
+  // Connect to the MQTT.Cool server hosted at 'localhost' and listening on TCP
   // port 8080.
-  MQTTExtender.connect('http://localhost:8080', {
+  MQTTCool.connect('http://localhost:8080', {
 
-    onConnectionSuccess: function(mqttExtenderSession) {
+    onConnectionSuccess: function(mqttCoolSession) {
       // Create a MQTT client instance ready to connect to the configured MQTT
-      //broker.
-      var mqttClient = mqttExtenderSession.createClient('mosquitto');
+      // broker.
+      var mqttClient = mqttCoolSession.createClient('mosquitto');
 
       // Connect to the MQTT broker.
       mqttClient.connect({
