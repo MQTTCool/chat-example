@@ -83,7 +83,7 @@ deployed the project.
 
 ### Related Projects
 
-* [MQTT.Cool - Hello IoT World Demo - HTML Client](https://github.com/Lightstreamer/MQTTExtender-example-Hello_IoT_World-client-javascript)
+* [MQTT.Cool - Hello IoT World Demo - HTML Client](https://github.com/Lightstreamer/MQTT.Cool-example-Hello_IoT_World-client-javascript)
 * [Lightstreamer - Basic Chat Demo - HTML Client](https://github.com/Lightstreamer/Lightstreamer-example-chat-client-javascript)
 
 ## MQTT.Cool Compatibility Notes
