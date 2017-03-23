@@ -1,4 +1,7 @@
 /*
+  MQTT.Cool - http://MQTT.Cool
+  MQTT Chat Demo
+
   Copyright (c) Lightstreamer Srl
 
   Licensed under the Apache License, Version 2.0 (the "License");
