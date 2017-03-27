@@ -44,7 +44,7 @@ information on how to configure broker connection parameters):
   ...
   ```
 
-* Launch the MQTT.Cool Server.
+* Launch the MQTT.Cool server.
 * Download this project.
 * RequireJS is currently hot-linked in the html page: you may want to replace it
 with a local version and/or to upgrade its version.
