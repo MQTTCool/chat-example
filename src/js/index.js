@@ -1,5 +1,5 @@
 /*
-  MQTT.cool - http://www.lightstreamer.com
+  MQTT.Cool - http://www.lightstreamer.com
   MQTT Chat Demo
 
   Copyright (c) Lightstreamer Srl
@@ -18,7 +18,7 @@
 */
 
 require(['MQTTCool'], function(MQTTCool) {
-  // Connect to the MQTT.cool server hosted at 'localhost' and listening on TCP
+  // Connect to the MQTT.Cool server hosted at 'localhost' and listening on TCP
   // port 8080.
   MQTTCool.connect('http://localhost:8080', {
 
