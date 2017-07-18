@@ -23,7 +23,7 @@ follows these steps.
 
 * As prerequisite, this demo needs an up and running MQTT broker. You can choose
 whatever MQTT broker you prefer, or may also use one of the available public
-broker (an update-to-date list is maintained at
+broker (an up-to-date list is maintained at
 [https://github.com/mqtt/mqtt.github.io/wiki/public_brokers]()).
 * Configure the MQTT.Cool instance. Please refer to Lightstreamer
 web site [download page](http://download.lightstreamer.com/) to find the
