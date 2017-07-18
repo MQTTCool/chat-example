@@ -17,55 +17,53 @@
   limitations under the License.
 */
 
-require(['MQTTCool'], function(MQTTCool) {
-  // Connect to the MQTT.Cool server hosted at 'localhost' and listening on TCP
-  // port 8080.
-  MQTTCool.connect('http://localhost:8080', {
+// Connect to the MQTT.Cool server hosted at 'localhost' and listening on TCP
+// port 8080.
+mqttcool.openSession('http://localhost:8080', {
 
-    onConnectionSuccess: function(mqttCoolSession) {
-      // Create a MQTT client instance ready to connect to the configured MQTT
-      // broker.
-      var mqttClient = mqttCoolSession.createClient('mosquitto');
+  onConnectionSuccess: function(mqttCoolSession) {
+    // Create a MQTT client instance ready to connect to the configured MQTT
+    // broker.
+    var mqttClient = mqttCoolSession.createClient('mosquitto');
 
-      // Connect to the MQTT broker.
-      mqttClient.connect({
-        onSuccess: function() {
-          // Once connected, subscribe to the 'chat' topic.
-          mqttClient.subscribe('chat');
-        }
-      });
+    // Connect to the MQTT broker.
+    mqttClient.connect({
+      onSuccess: function() {
+        // Once connected, subscribe to the 'chat' topic.
+        mqttClient.subscribe('chat');
+      }
+    });
 
-      // Called upon receiving a chat message.
-      mqttClient.onMessageArrived = function(message) {
-        // Message received.
-        $('#messages')
-          .append($('<div>')
-            .text(message.payloadString)
-            .addClass('messageContainer')) //append the message
-          .scrollTop($('#messages')
-            .prop('scrollHeight')); //move the scrollbar on the bottom
-      };
+    // Called upon receiving a chat message.
+    mqttClient.onMessageArrived = function(message) {
+      // Message received.
+      $('#messages')
+        .append($('<div>')
+          .text(message.payloadString)
+          .addClass('messageContainer')) //append the message
+        .scrollTop($('#messages')
+          .prop('scrollHeight')); //move the scrollbar on the bottom
+    };
 
-      // Called when the client loses its connection.
-      mqttClient.onConnectionLost = function(responseObject) {
-        if (responseObject.errorCode !== 0) {
-          console.log('Error: ' + responseObject.errorCode + ' ' +
-            responseObject.errorMessage);
-        }
-      };
+    // Called when the client loses its connection.
+    mqttClient.onConnectionLost = function(responseObject) {
+      if (responseObject.errorCode !== 0) {
+        console.log('Error: ' + responseObject.errorCode + ' ' +
+          responseObject.errorMessage);
+      }
+    };
 
-      // Enable the submission form.
-      $('input').prop('disabled', false);
-      $('#submitForm').submit(function(event) {
-        event.preventDefault();
+    // Enable the submission form.
+    $('input').prop('disabled', false);
+    $('#submitForm').submit(function(event) {
+      event.preventDefault();
 
-        // Get value from the user input and send to MQTT topic.
-        var text = $('#user_message').val();
-        mqttClient.send('chat', text);
+      // Get value from the user input and send to MQTT topic.
+      var text = $('#user_message').val();
+      mqttClient.send('chat', text);
 
-        // Clear the user input.
-        $('#user_message').val('');
-      });
-    }
-  });
+      // Clear the user input.
+      $('#user_message').val('');
+    });
+  }
 });
