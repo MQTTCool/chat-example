@@ -21,7 +21,7 @@ Check out the sources for further explanations.
 If you want to install a version of this demo pointing to your local MQTT.Cool,
 follows these steps.
 
-* As prerequisite, this demo needs a MQTT infrastructure to run. You can choose
+* As prerequisite, this demo needs an up and running MQTT broker. You can choose
 whatever MQTT broker you prefer, or may also use one of the available public
 broker (an update-to-date list is maintained at
 [https://github.com/mqtt/mqtt.github.io/wiki/public_brokers]()).
@@ -47,7 +47,7 @@ information on how to configure broker connection parameters):
 
 * Launch the MQTT.Cool server.
 * Download this project.
-* As the last version of the MQTT.Cool JavaScript library is always available through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page
+* As the last version of the MQTT.Cool JavaScript library is always available through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page.
 * jQuery is currently hot-linked in the html page: you may want to replace it
 with a local version and/or to upgrade its version.
 * Deploy this demo on MQTT.Cool (used as Web server) or in any external Web
@@ -56,8 +56,8 @@ server. If you choose the former, create a folder with name such as
 of the `src` folder of this project.
 
 ## Configure
-The demo assumes that MQTT.Cool is launched from localhost, but if you need to
-target a different server, search in `js/index.js` this line:
+The demo assumes that the MQTT.Cool server is launched from localhost, but if
+you need to target a different server, search in `js/index.js` this line:
 ```js
 mqttcool.connect('http://localhost:8080', {
 ```
