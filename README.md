@@ -8,10 +8,11 @@ MQTT.Cool.
 ## Details
 
 The **MQTT Basic Chat Demo** implements an extremely simple chat application,
-which shows a basic usage of the *MQTT.Cool Web Client API* to handle
-communications with MQTT.Cool. All the users connected to the page can exchange
-messages, therefore launch multiple instances of the demo, possibly on different
-machines, to appreciate the message broadcast capability.
+which shows a basic usage of the
+*[MQTT.Cool Web Client API](http://www.lightstreamer.com/api/mqtt.cool-web-client/latest/)*
+to handle communications with MQTT.Cool. All the users connected to the page can
+exchange messages, therefore launch multiple instances of the demo, possibly on
+different machines, to appreciate the message broadcast capability.
 
 Check out the sources for further explanations.
 
@@ -46,8 +47,7 @@ information on how to configure broker connection parameters):
 
 * Launch the MQTT.Cool server.
 * Download this project.
-* RequireJS is currently hot-linked in the html page: you may want to replace it
-with a local version and/or to upgrade its version.
+* As the last version of the MQTT.Cool JavaScript library is always available through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page
 * jQuery is currently hot-linked in the html page: you may want to replace it
 with a local version and/or to upgrade its version.
 * Deploy this demo on MQTT.Cool (used as Web server) or in any external Web
@@ -57,16 +57,16 @@ of the `src` folder of this project.
 
 ## Configure
 The demo assumes that MQTT.Cool is launched from localhost, but if you need to
-target a different server, search in `index.html` this line:
+target a different server, search in `js/index.js` this line:
 ```js
-MQTTCool.connect('http://localhost:8080', {
+mqttcool.connect('http://localhost:8080', {
 ```
 and change it accordingly.
 
 Further, the demo will look for the **mosquitto** alias, which is predefined in
 the default MQTT.Cool configuration. Once more, if you need to target a
 different MQTT broker, and provided that relative connection parameters are
-already defined as shown above, modify the following line in `index.html`:
+already defined as shown above, modify the following line in `js/index.js`:
 
 ```js
   var mqttClient = mqttCoolSession.createClient('mosquitto');
@@ -84,10 +84,8 @@ deployed the project.
 ### Related Projects
 
 * [MQTT.Cool - Hello IoT World Demo - HTML Client](https://github.com/MQTTCool/MQTT.Cool-example-Hello_IoT_World-client-javascript)
-* [Lightstreamer - Basic Chat Demo - HTML Client](https://github.com/Lightstreamer/Lightstreamer-example-chat-client-javascript)
 
 ## MQTT.Cool Compatibility Notes
 
-* Compatible with MQTT.Cool Web Client SDK version 1.0 or
-newer.
+* Compatible with MQTT.Cool SDK for Web Client version 1.0.0 or newer.
 * Compatible with MQTT.Cool since version 1.0 or newer.
