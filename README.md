@@ -31,8 +31,8 @@ MQTT.Cool download package. MQTT.Cool comes with a set of predefined
 configurations for connecting with local MQTT server instances, as well as with
 the most common publicly accessible brokers. If you want to provide a new custom
 configuration, open the `mqtt_master_connector_conf.xml` file located under
-`<MQTT.COOL_HOME>/mqtt_connectors` and provide a set of entries similar to
-the following (please refer to the inline documentation for more in-depth
+`<MQTT.COOL_HOME>/mqtt_connectors` and provide a set of entries similar to the
+following (please refer to the inline documentation for more in-depth
 information on how to configure broker connection parameters):
 
   ```xml
@@ -52,15 +52,18 @@ information on how to configure broker connection parameters):
 with a local version and/or to upgrade its version.
 * Deploy this demo on MQTT.Cool (used as Web server) or in any external Web
 server. If you choose the former, create a folder with name such as
-`ChatDemo` under the `<MQTT.COOL_HOME>/pages`, and copy there the contents
-of the `src` folder of this project.
+`ChatDemo` under the `<MQTT.COOL_HOME>/pages` folder, and copy there the
+contents of `src` of this project.
 
 ## Configure
+
 The demo assumes that the MQTT.Cool server is launched from localhost, but if
 you need to target a different server, search in `js/index.js` this line:
+
 ```js
 mqttcool.connect('http://localhost:8080', {
 ```
+
 and change it accordingly.
 
 Further, the demo will look for the **mosquitto** alias, which is predefined in
@@ -71,13 +74,15 @@ already defined as shown above, modify the following line in `js/index.js`:
 ```js
   var mqttClient = mqttCoolSession.createClient('mosquitto');
 ```
-and change it by replacing **mosquitto** with new alias mapping the MQTT broker
-you are going to use.
+
+and change it by replacing **mosquitto** with the new alias that maps the MQTT
+broker you are going to use.
 
 ## Launch
-Open your browser and point it to [http://localhost:8080/ChatDemo](), or to
-the address according to the host and/or the name of the folder where you
-deployed the project.
+
+Open your browser and point it to [http://localhost:8080/ChatDemo](), or to the
+address according to the host and/or the name of the folder where you deployed
+the project.
 
 ## See Also
 
@@ -89,3 +94,4 @@ deployed the project.
 
 * Compatible with MQTT.Cool SDK for Web Client version 1.0.0 or newer.
 * Compatible with MQTT.Cool since version 1.0 or newer.
+
