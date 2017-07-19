@@ -25,12 +25,12 @@ follows these steps.
 whatever MQTT broker you prefer, or may also use one of the available public
 broker (an up-to-date list is maintained at
 [https://github.com/mqtt/mqtt.github.io/wiki/public_brokers]()).
-* Configure the MQTT.Cool instance. Please refer to Lightstreamer
-web site [download page](http://download.lightstreamer.com/) to find the
-MQTT.Cool download package. MQTT.Cool comes with a set of predefined
-configurations for connecting with local MQTT server instances, as well as with
-the most common publicly accessible brokers. If you want to provide a new custom
-configuration, open the `mqtt_master_connector_conf.xml` file located under
+* Configure an MQTT.Cool instance. Please refer to Lightstreamer web site
+[download page](http://download.lightstreamer.com/) to find the MQTT.Cool
+download package. MQTT.Cool comes with a set of predefined configurations for
+connecting with local MQTT server instances, as well as with the most common
+publicly accessible brokers. If you want to provide a new custom configuration,
+open the `mqtt_master_connector_conf.xml` file located under
 `<MQTT.COOL_HOME>/mqtt_connectors` and provide a set of entries similar to the
 following (please refer to the inline documentation for more in-depth
 information on how to configure broker connection parameters):
