@@ -47,7 +47,8 @@ information on how to configure broker connection parameters):
 
 * Launch the MQTT.Cool server.
 * Download this project.
-* As the last version of the MQTT.Cool JavaScript library is always available through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page.
+* As the lastest version of the MQTT.Cool JavaScript library is always available
+through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page.
 * jQuery is currently hot-linked in the html page: you may want to replace it
 with a local version and/or to upgrade its version.
 * Deploy this demo on MQTT.Cool (used as Web server) or in any external Web
