@@ -73,7 +73,7 @@ different MQTT broker, and provided that relative connection parameters are
 already defined as shown above, modify the following line in `js/index.js`:
 
 ```js
-  var mqttClient = mqttCoolSession.createClient('mosquitto');
+var mqttClient = mqttCoolSession.createClient('mosquitto');
 ```
 
 and change it by replacing **mosquitto** with the new alias that maps the MQTT
