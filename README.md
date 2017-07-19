@@ -62,7 +62,7 @@ The demo assumes that the MQTT.Cool server is launched from localhost, but if
 you need to target a different server, search in `js/index.js` this line:
 
 ```js
-mqttcool.connect('http://localhost:8080', {
+mqttcool.openSession('http://localhost:8080', {
 ```
 
 and change it accordingly.
