@@ -81,7 +81,8 @@ broker you are going to use.
 
 ## Launch
 
-Open your browser and point it to [http://localhost:8080/ChatDemo](), or to the
+Open your browser and point it to
+[http://localhost:8080/ChatDemo](http://localhost:8080/ChatDemo), or to the
 address according to the host and/or the name of the folder where you deployed
 the project.
 
