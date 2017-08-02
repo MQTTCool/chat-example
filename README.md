@@ -59,7 +59,7 @@ contents of `src` of this project.
 ## Configure
 
 The demo assumes that the MQTT.Cool server is launched from localhost, but if
-you need to target a different server, search in `js/index.js` this line:
+you need to target a different server, search in `src/js/index.js` this line:
 
 ```js
 mqttcool.openSession('http://localhost:8080', {
@@ -70,7 +70,7 @@ and change it accordingly.
 Further, the demo will look for the **mosquitto** alias, which is predefined in
 the default MQTT.Cool configuration. Once more, if you need to target a
 different MQTT broker, and provided that relative connection parameters are
-already defined as shown above, modify the following line in `js/index.js`:
+already defined as shown above, modify the following line in `src/js/index.js`:
 
 ```js
 var mqttClient = mqttCoolSession.createClient('mosquitto');
