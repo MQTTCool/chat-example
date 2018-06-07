@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!--
-  MQTT.Cool - http://www.lightstreamer.com
+  MQTT.Cool - http://mqtt.cool
   MQTT Chat Demo
 
   Copyright (c) Lightstreamer Srl
@@ -22,39 +22,86 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <title>MQTT.Cool Chat Demo</title>
-  <link rel="stylesheet" type="text/css" href="css/iot_chat.css" />
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/chat.css" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/mqtt.cool-web-client"></script>
-  <script src="js/index.js"></script>
+
+  <script src="js/app.js"></script>
 </head>
 
 <body>
-  <a href="https://github.com/MQTTCool/MQTT.Cool-example-Chat-client-javascript"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-  <div id="wrap">
-    <table width="500" border="0">
-      <tr>
-        <td><a href="http://www.lightstreamer.com" target="_blank">
-          <img src="images/logo.png" alt="LIGHTSTREAMER" hspace="0" border="0" /></a></td>
-        <td class="demoTitle">MQTT CHAT DEMO</td>
-      </tr>
-    </table>
+  <a href="https://github.com/MQTTCool/MQTT.Cool-example-Chat-client-javascript">
+    <img style="position: absolute; top: 0; right: 0; border: 0; z-index:1" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+      alt="Fork me on GitHub">
+  </a>
 
+  <!-- Main container -->
+  <div id="main" class="container p-2 mh-100">
+    <a href="http://mqtt.cool">
+      <img src="images/logo.png" class="img-fluid mb-2">
+    </a>
 
-    <!-- Message container -->
-    <div id="messages">
+    <!-- Login container-->
+    <div class="row m-2" id="login">
+      <form id="loginForm" class="col-12 p-0">
+
+        <div class="row m-0">
+          <div class="col-6 row m-0 p-0">
+            <input type="text" class="col-8 form-control " id="brokerHost" placeholder="host" disabled required>
+            <input type="number" class="col-3 form-control ml-1" id="brokerPort" placeholder="TCP port" disabled required>
+          </div>
+
+          <div class="col-6 p-0 d-flex flex-row justify-content-end input-group">
+            <input type="text" class="form-control" id="user" placeholder="Choose a nickname" disabled required/>
+            <div class="input-group-append">
+              <button id="connectBtn" type="button" class="btn btn-primary" disabled>Connect</button>
+              <button id="disconnectBtn" type="button" class="btn btn-secondary" disabled>Disconnect</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Chat window -->
+    <div class="row m-2" id="chat">
+      <!-- Users container -->
+      <div class="card col-2 p-0">
+        <div class="card-header p-1">Connected Users</div>
+        <div id='usersListCard' class="card-body p-1">
+          <ul id="usersList" class="list-group mh-100"></ul>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Messages container -->
+      <div class="card col-10 p-0">
+        <div class="card-header p-1 d-flex justify-content-between">
+          <p class="m-0">Messages</p>
+          <button id="clearMessages" class="p-0 btn btn-secondary btn-sm far fa-trash-alt"/>
+        </div>
+        <div id="messages" class="card-body p-1">
+        </div>
+      </div>
 
     </div>
 
-    <!-- Message submission form -->
-    <form id="submitForm" class="formPanel">
-      <div class="sendTitle">Send a message:</div>
-      <div class="formElements">
-        <input id="user_message" type="text" disabled size="70" />
-        <input type="submit" disabled value="Send" />
+    <!-- Send message container -->
+    <div class="row m-2">
+      <div class="col-12 input-group p-0">
+        <input type="text" class="form-control" disabled id="sendMessage" placeholder="Write message...">
+        <div class="input-group-append">
+          <button id="replyBtn" class="btn btn-outline-primary" disabled type="submit">Reply</button>
+        </div>
       </div>
-    </form>
+    </div>
   </div>
 
 </body>
