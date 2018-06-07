@@ -53,9 +53,9 @@ address according to the host and/or the name of the folder where you deployed
 the project.
 
 The demo is configured to establish an *MQTT channel* to the publicly accessible
- MQTT broker hosted at `tcp://broker.mqtt.com:1883`](tcp://broker.mqtt.com:1883)`,
- but fill free to provide any broker address through the relative form fields;
- then, click *Connect* to start.
+ MQTT broker hosted at `tcp://broker.mqtt.com:1883`, but fill free to provide
+ any broker address through the relative form fields; then, click *Connect* to
+ start.
 
 ## See Also
 
