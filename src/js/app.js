@@ -23,7 +23,6 @@ const USERS_LIST_TOPIC = USERS_LIST_TOPIC_PREFIX + '/#';
 const CHAT_ROOM_TOPIC = 'chat';
 
 const MQTT_COOL_URL = 'https://cloud.mqtt.cool';
-const MQTT_COOL_URL = 'http://localhost:8081';
 const DEFAULT_BROKER_HOST = 'broker.mqtt.cool';
 const DEFAULT_BROKER_PORT = '1883';
 
