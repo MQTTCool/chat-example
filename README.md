@@ -43,6 +43,7 @@ different server, search in `src/js/app.js` this line:
 ```js
 const MQTT_COOL_URL = 'https://cloud.mqtt.cool';
 ```
+and change it accordingly.
 
 ## Launch
 
@@ -51,7 +52,10 @@ Open your browser and point it to
 address according to the host and/or the name of the folder where you deployed
 the project.
 
-The demo is configured to establish an *MQTT channel* to the publicly accessible MQTT broker hosted at [tcp://broker.mqtt.com:1883](tcp://broker.mqtt.com:1883), but fill free to provide any broker address through the relative form fields; then, click *Connect* to start.
+The demo is configured to establish an *MQTT channel* to the publicly accessible
+ MQTT broker hosted at `tcp://broker.mqtt.com:1883`](tcp://broker.mqtt.com:1883)`,
+ but fill free to provide any broker address through the relative form fields;
+ then, click *Connect* to start.
 
 ## See Also
 
