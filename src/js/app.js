@@ -127,7 +127,8 @@ function connectToBroker(urlBroker, user, mqttCoolSession) {
   // provider url.
   const mqttClient = setupMqttClient(urlBroker, clientId, mqttCoolSession);
 
-  showMessage(MSG_LEVEL_STYLE.INFO, 'Connecting to the MQTT broker at ' + urlBroker + '...');
+  showMessage(MSG_LEVEL_STYLE.INFO, 'Connecting to the MQTT broker at '
+    + urlBroker + '...');
   mqttClient.connect({
     onSuccess: function() {
       connected(urlBroker, mqttClient, clientId);
@@ -331,7 +332,9 @@ function updateUsersList(decodedUser, isMe) {
 
   const newUser = $('<li>')
     .prop('id', decodedUser.clientId)
-    .addClass('list-group-item').addClass(userColorClass)
+    .addClass('list-group-item')
+    .addClass('p-1 border-0')
+    .addClass(userColorClass)
     .append($('<i>').addClass(userIconClass).addClass('mr-1'))
     .append(decodedUser.username + userTextSuffix);
 
