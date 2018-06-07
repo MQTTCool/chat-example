@@ -1,14 +1,14 @@
-# MQTT.Cool - Basic Chat Demo - HTML Client
+# MQTT.Cool - Chat Demo - HTML Client
 
-The **MQTT Basic Chat Demo** is a very simple chat application based on
+The **MQTT Chat Demo** is a very simple chat application based on
 MQTT.Cool.
 
 ![screenshot](screen-large.png)
 
 ## Details
 
-The **MQTT Basic Chat Demo** implements an extremely simple chat application,
-which shows a basic usage of the
+The **MQTT Chat Demo** implements an extremely simple chat application, which
+shows a basic usage of the
 *[MQTT.Cool Web Client API](http://www.lightstreamer.com/api/mqtt.cool-web-client/latest/)*
 to handle communications with MQTT.Cool. All the users connected to the page can
 exchange messages, therefore launch multiple instances of the demo, possibly on
@@ -25,32 +25,10 @@ follows these steps.
 whatever MQTT broker you prefer, or may also use one of the available public
 broker (an up-to-date list is maintained at
 [https://github.com/mqtt/mqtt.github.io/wiki/public_brokers]()).
-* Configure an MQTT.Cool instance. Please refer to Lightstreamer web site
-[download page](http://download.lightstreamer.com/) to find the MQTT.Cool
-download package. MQTT.Cool comes with a set of predefined configurations for
-connecting with local MQTT server instances, as well as with the most common
-publicly accessible brokers. If you want to provide a new custom configuration,
-open the `mqtt_master_connector_conf.xml` file located under
-`<MQTT.COOL_HOME>/mqtt_connectors` and provide a set of entries similar to the
-following (please refer to the inline documentation for more in-depth
-information on how to configure broker connection parameters):
-
-  ```xml
-  ...
-  <!-- MQTT broker connection parameters for a local instance
-       listening on port 1883, aliased by "mybroker". -->
-  <param name="mybroker.server_address">tcp://localhost:1883</param>
-  <param name="mybroker.connection_timeout">5</param>
-  <param name="mybroker.keep_alive">20</param>
-  ...
-  ```
-
 * Launch the MQTT.Cool server.
 * Download this project.
-* As the lastest version of the MQTT.Cool JavaScript library is always available
+* As the latest version of the MQTT.Cool JavaScript library is always available
 through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page.
-* jQuery is currently hot-linked in the html page: you may want to replace it
-with a local version and/or to upgrade its version.
 * Deploy this demo on MQTT.Cool (used as Web server) or in any external Web
 server. If you choose the former, create a folder with name such as
 `ChatDemo` under the `<MQTT.COOL_HOME>/pages` folder, and copy there the
@@ -58,27 +36,13 @@ contents of `src` of this project.
 
 ## Configure
 
-The demo assumes that the MQTT.Cool server is launched from localhost, but if
-you need to target a different server, search in `src/js/index.js` this line:
+The demo assumes that the MQTT.Cool server to connect to is hosted at
+[cloud.mqtt.cool](https://cloud.mqtt.cool), but if you need to target a
+different server, search in `src/js/app.js` this line:
 
 ```js
-mqttcool.openSession('http://localhost:8080', {
+const MQTT_COOL_URL = 'https://cloud.mqtt.cool';
 ```
-
-and change it accordingly.
-
-Further, the demo will look for the **mosquitto** alias, which is one of the
-predefined configurations in `mqtt_master_connector_conf.xml`. Once more, if you
-need to target a different MQTT broker, and provided that relative connection
-parameters are already defined as shown above, modify the following line in
-`src/js/index.js`:
-
-```js
-var mqttClient = mqttCoolSession.createClient('mosquitto');
-```
-
-and change it by replacing **mosquitto** with the new alias that maps the MQTT
-broker you are going to use.
 
 ## Launch
 
@@ -86,6 +50,8 @@ Open your browser and point it to
 [http://localhost:8080/ChatDemo](http://localhost:8080/ChatDemo), or to the
 address according to the host and/or the name of the folder where you deployed
 the project.
+
+The demo is configured to establish an *MQTT channel* to the publicly accessible MQTT broker hosted at [tcp://broker.mqtt.com:1883](tcp://broker.mqtt.com:1883), but fill free to provide any broker address through the relative form fields; then, click *Connect* to start.
 
 ## See Also
 
