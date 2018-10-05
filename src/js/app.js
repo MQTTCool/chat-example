@@ -1,5 +1,6 @@
 /*
-  MQTT.Cool - http://mqtt.cool
+  MQTT.Cool - https://mqtt.cool
+
   MQTT Chat Demo
 
   Copyright (c) Lightstreamer Srl
@@ -22,7 +23,10 @@ const USERS_LIST_TOPIC_PREFIX = 'users';
 const USERS_LIST_TOPIC = USERS_LIST_TOPIC_PREFIX + '/#';
 const CHAT_ROOM_TOPIC = 'chat';
 
-const MQTT_COOL_URL = 'https://cloud.mqtt.cool';
+// Target MQTT.Cool address. Change it with if required.
+const MQTT_COOL_URL = 'http://localhost:8080';
+
+// Default MQTT broker to connect to.
 const DEFAULT_BROKER_HOST = 'broker.mqtt.cool';
 const DEFAULT_BROKER_PORT = '1883';
 
@@ -63,7 +67,7 @@ $(function() {
  */
 function connectToMQTTCool(mqttCoolUrl) {
   showMessage(MSG_LEVEL_STYLE.INFO, 'Connecting to the MQTT.Cool server...');
-  mqttcool.openSession(mqttCoolUrl, {
+  mqttcool.openSession(mqttCoolUrl, 'demouser', '', {
 
     onConnectionFailure: function(errType, errCode, errMessage) {
       onMqttCoolFailure(errType, errCode, errMessage);
