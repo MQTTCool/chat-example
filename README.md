@@ -11,7 +11,7 @@ MQTT.Cool.
 
 The **MQTT Chat Demo** implements an extremely simple chat application, which
 shows a basic usage of the
-*[MQTT.Cool Web Client API](http://www.lightstreamer.com/api/mqtt.cool-web-client/latest/)*
+*[MQTT.Cool Web Client API](https://mqtt.cool/res/mqtt.cool-web-client-sdk/1.1.2/doc/index.html)*
 to handle communications with MQTT.Cool. All the users connected to the page can
 exchange messages, therefore launch multiple instances of the demo, possibly on
 different machines, to appreciate the message broadcast capability.
