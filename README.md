@@ -29,7 +29,7 @@ broker (an up-to-date list is maintained at
 https://github.com/mqtt/mqtt.github.io/wiki/public_brokers).
 * Launch the MQTT.Cool server.
 * Download this project.
-* As the lastest version of the MQTT.Cool JavaScript library is always available
+* As the latest version of the MQTT.Cool JavaScript library is always available
 through [`unpkg`](https://unpkg.com/#/), it is hot-linked in the html page.
 
 ## Configure
