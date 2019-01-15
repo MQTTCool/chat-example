@@ -1,7 +1,6 @@
 # MQTT.Cool - Chat Demo - HTML Client
 
-The **MQTT Chat Demo** is a very simple chat application based on
-MQTT.Cool.
+The **Chat Demo** is a very simple chat application based on MQTT.Cool.
 
 ## Live Demo
 
@@ -12,7 +11,7 @@ MQTT.Cool.
 
 ## Details
 
-The **MQTT Chat Demo** implements an extremely simple chat application, which
+The **Chat Demo** implements an extremely simple chat application, which
 shows a basic usage of the
 *[MQTT.Cool Web Client API](https://mqtt.cool/docs/web-client-sdk/api/index.html)*
 to handle communications with MQTT.Cool. All the users connected to the page can
