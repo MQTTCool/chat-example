@@ -7,7 +7,7 @@ MQTT.Cool.
 
 [![Live Demo](screen-large.gif)](https://demos.mqtt.cool/chat)
 
-### [![](http://demos.mqtt.cool/resources/play.png) View live demo](https://demos.mqtt.cool/char)
+### [![](http://demos.mqtt.cool/resources/play.png) View live demo](https://demos.mqtt.cool/chat)
 
 
 ## Details
