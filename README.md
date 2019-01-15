@@ -1,4 +1,4 @@
-# MQTT.Cool - Chat Demo - HTML Client
+# Chat Demo - HTML Client
 
 The **Chat Demo** is a very simple chat application based on MQTT.Cool.
 
