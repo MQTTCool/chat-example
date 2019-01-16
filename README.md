@@ -20,6 +20,12 @@ different machines, to appreciate the message broadcast capability.
 
 Check out the sources for further explanations.
 
+### Overall Architecture
+
+Here the overall architecture of the example:
+
+![](chat-demo-architecture.png)
+
 ## Install
 
 If you want to install a version of this demo pointing to your local MQTT.Cool,
