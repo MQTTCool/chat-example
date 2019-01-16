@@ -22,7 +22,7 @@ Check out the sources for further explanations.
 
 ### Overall Architecture
 
-Here the overall architecture of the example:
+Here the overall architecture of the demo:
 
 ![](chat-demo-architecture.png)
 
